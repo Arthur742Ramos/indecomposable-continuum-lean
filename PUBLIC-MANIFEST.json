@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "scope": "Exact public source files; this manifest does not hash itself.",
+  "mathlib_pin": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "files": [
+    {
+      "file": "Solution.lean",
+      "bytes": 9917,
+      "sha256": "e4aea1333e2ba5368703432232167aeb4e7cf9c05885414b8e69000708c86a7d"
+    },
+    {
+      "file": "Challenge.lean",
+      "bytes": 3095,
+      "sha256": "34ac72918311aaa70b9b2d9d7768c1630d34ae68ec757930c93dc1110e387ceb"
+    },
+    {
+      "file": "comparator.json",
+      "bytes": 507,
+      "sha256": "ac645e63f6d340724d338cb442b3f0ed9e653bf569ffdf159f99b50d9b99e6e8"
+    },
+    {
+      "file": "formalization.yaml",
+      "bytes": 5860,
+      "sha256": "b2f8b647648d6b20d0170b1368e3563b59941ea09dc9ea9fcc5ce124f28033f4"
+    },
+    {
+      "file": "lakefile.toml",
+      "bytes": 340,
+      "sha256": "2b43664b2527712f14341f5851028368df8b5d715bd856dfc350e77dc9d3b241"
+    },
+    {
+      "file": "lake-manifest.json",
+      "bytes": 3696,
+      "sha256": "0ea9a7315c674af67aede40428ba472f9bb2001dd6f1188f516b8dd903ed650f"
+    },
+    {
+      "file": "lean-toolchain",
+      "bytes": 29,
+      "sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 11351,
+      "sha256": "5f3751276afe718ffa78ec1fc61490d4185712554bcb6a90059416dc424ce9a6"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 53,
+      "sha256": "2630d6761ed0bfa1ae7be98e735a3d5af8262355e992292451e8d5f493dfea4a"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4135,
+      "sha256": "0468211d144978a9eae48620ff4b811d79f60db61358705316753329e66c61f0"
+    },
+    {
+      "file": "DEFINITIONS.md",
+      "bytes": 9085,
+      "sha256": "195086aeea4d4f4076d96751121d6a8fad0decfbc3eb893c7985c9a89ba5eea1"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "bytes": 2218,
+      "sha256": "a379d6c3f8174634ae22dc04ba068ffdac3c62c1a35de08e7131e7752621c0dd"
+    },
+    {
+      "file": "VERIFICATION.md",
+      "bytes": 3762,
+      "sha256": "399f9d779701241fc47352bf4a15e683516874ff099c2f0273eff9c2941a6b13"
+    },
+    {
+      "file": "REVIEW.md",
+      "bytes": 1189,
+      "sha256": "7f697aa07566f7d01b4671822942c2f40f440b7e9c00ddefa7cb99fbd43fdd13"
+    },
+    {
+      "file": ".github/workflows/lean.yml",
+      "bytes": 1159,
+      "sha256": "f7bfb55cdff0a54a80176317fc232dca915c4b633b351b99291f3008118c103d"
+    },
+    {
+      "file": "scripts/verify.py",
+      "bytes": 7461,
+      "sha256": "c6eb118e5184ed304ee552fe3c15368c753a9683d37b87b5e57689310ed71fca"
+    },
+    {
+      "file": "scripts/CompareTypes.lean",
+      "bytes": 1203,
+      "sha256": "8fb5ee12e088099e4a74ff3a82a9ae697a6e39cdda5957fc4738721ae584045d"
+    },
+    {
+      "file": "scripts/DefinitionAudit.lean",
+      "bytes": 2038,
+      "sha256": "535efd43dabca3de3acd1de132323f343bd355e863c1460c15a820de7c70ed2d"
+    },
+    {
+      "file": "scripts/SemanticAudit.lean",
+      "bytes": 1934,
+      "sha256": "5ba67dc6066db430b3074b45bbeb837da5b1785159ca2eee6618d5695eac9b8c"
+    },
+    {
+      "file": "scripts/check_definitions.py",
+      "bytes": 7108,
+      "sha256": "213af759edf6327c259e977620f17b137b403c91b82f0779ab23f6c801652669"
+    },
+    {
+      "file": "definition-evidence/manifest.json",
+      "bytes": 23954,
+      "sha256": "2a9d9756ebc0d688962a2c8b0c0b85948e15da2e1112dd70e661dfbe1b1cbbd5"
+    },
+    {
+      "file": "definition-evidence/mathlib/LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Basic/Nontrivial/Defs.lean.txt",
+      "bytes": 5106,
+      "sha256": "5355bd507f433008d09632e35b33596c0d46b5f741a60ac72f98e39832c38d2e"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "bytes": 11383,
+      "sha256": "4b5433ba90d229d2875756f2c486de41e2e1b5be89b7255be5fe7ed2e0c524c7"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Operations.lean.txt",
+      "bytes": 14767,
+      "sha256": "60e5fa9adbd7d068a553d5a28875f5250e0a20771b5179f9f552882d0865c68e"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Logic/Pairwise.lean.txt",
+      "bytes": 4665,
+      "sha256": "ccac95d1101a308ae38946e81caaa6d2c32e7e90ed99f7305dba9f01a955e62f"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/Disjoint.lean.txt",
+      "bytes": 21759,
+      "sha256": "5c59598e126b8345a9373277f8e30c0d52b3fce1080a96281f1dc54bc6dd619c"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "bytes": 25198,
+      "sha256": "d0b1e4022a3910b2768e8786a3a66d701db0cb4c59c055b3bd17ec4cd28a60e5"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/SetNotation.lean.txt",
+      "bytes": 8299,
+      "sha256": "302c614100cbc978e2af66d21d5eb0e09eb39402e9ae52a166e6faaa36d3dc14"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Compactness/Compact.lean.txt",
+      "bytes": 65757,
+      "sha256": "3fc7ffe7db4db0a2de07d6fdf0e65da486b3dced1f3bac4d58ab869a92f4ac64"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "bytes": 43158,
+      "sha256": "a1971f3ede509ec753e766747362fa33040b1bbb24d75fbf52f57584368c3c1c"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "bytes": 10047,
+      "sha256": "6a16294b9ce69e6f245f45abc59d45db011f2a1c545b4d5d403ccaca5b17c99c"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "bytes": 15801,
+      "sha256": "3b2ffc8154a531b4f0d3b36aa75ee08635c0df31884ba83baf1b0b0283c13748"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt",
+      "bytes": 6704,
+      "sha256": "ba804ff6a2bd28aea83da56dfc339e565745a088d7aeac977643410f1dae8f74"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/GDelta/Basic.lean.txt",
+      "bytes": 15506,
+      "sha256": "839130eb18758aa2bfcbe3ef40c98fcf9e0827458293fbdb5d04a5ec43b2d08a"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Separation/Hausdorff.lean.txt",
+      "bytes": 36099,
+      "sha256": "95c58f7ad7ef3ea627d5af8d2427c7d7e08a47207ed084e51945217f32566f06"
+    }
+  ]
+}

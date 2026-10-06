@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "IndecomposableContinuum.indecomposable_iff_empty_interior",
+    "IndecomposableContinuum.indecomposable_iff_nowhere_dense",
+    "IndecomposableContinuum.connected_compl_of_proper_subcontinuum",
+    "IndecomposableContinuum.preconnected_compl_singleton",
+    "IndecomposableContinuum.connected_compl_singleton"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

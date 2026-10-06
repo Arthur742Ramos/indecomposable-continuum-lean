@@ -1,0 +1,118 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Interior Characterization of Indecomposable Continua",
+    "description": "A compact connected Hausdorff space is indecomposable if and only if every proper nonempty compact connected subset has empty interior in that space, equivalently is nowhere dense. Removing a proper subcontinuum leaves a connected nonempty set. Every point has preconnected complement; for a nontrivial continuum the point complement is also nonempty. Singleton continua are included.",
+    "authors": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "responsible_maintainers": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "license": "Apache-2.0"
+  },
+  "repository": {
+    "role": "substantive-development"
+  },
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54F15",
+      "54D05",
+      "54D30"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Metric Topology: A First Course (for Math 4450, Spring 2011)",
+      "authors": [
+        "Paul Bankston"
+      ],
+      "type": "lecture-notes",
+      "id": "https://www.mscsnet.mu.edu/~paul/Paper/4450102text.pdf#page=91",
+      "location": "Propositions 29.1 and 29.2, printed pages 91 and 92; Exercise 29(6), printed page 93",
+      "relationship": "formalizes",
+      "author_endorsement": "not-contacted",
+      "note": "The source states the characterization for Hausdorff continua. The formalization includes the equivalent nowhere-dense formulation and the nonseparation consequences, with singleton cases explicit."
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/leanprover-community/mathlib4/tree/065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "relationship": "builds-on",
+      "note": "Uses compactness, closed-set connectedness criteria, connected closures, and the closed-set nowhere-dense criterion. A scan of 9,084 Lean files and inspection of relevant candidates found no equivalent target. This is not a proof of absence or a priority claim."
+    }
+  ],
+  "status": {
+    "scope": "Compact Hausdorff continua, including singleton continua, with interior and nowhere density in the topology of the continuum. Point-complement connectedness requires Nontrivial only to ensure nonemptiness.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "OpenAI Codex (runtime identifier not independently attested)"
+        ],
+        "framework": "Lean 4 and Mathlib",
+        "tool_setup": "One serial compiler under a Windows Job Object with one CPU, 3 GiB aggregate memory, and 30 minute stages. Fresh strict proof compilation, renamed dependency-only Challenge, exact raw theorem and predicate comparisons, and transitive standard-axiom audits."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "Human direction selected the target, scope, and resource limits. The user requested GPT-6.1 sol High at Standard speed. Challenge has five intentional theorem holes; Solution and the explicit definitions have none. Failed attempts remain in private evidence."
+  },
+  "fidelity": {
+    "divergences": "The continuum is the ambient type X. For a continuum C inside a larger space, instantiate X with subtype C and its induced topology. No metric, local connectedness, or nondegeneracy assumption is used for the characterizations. Mathlib IsConnected includes nonemptiness. The preconnected point-removal theorem permits the empty complement of a singleton; the connected version adds Nontrivial X. Both project predicates have complete identical bodies in Challenge and Solution."
+  },
+  "review": {
+    "status": "Author verification is recorded in VERIFICATION.md. Independent review, human mathematical review, hosted CI, Comparator, NanoDa, con-ron replay, and registry review are not completed in this author workspace. Publication and further review belong to the coordinating task."
+  },
+  "alignment": {
+    "namespace": "IndecomposableContinuum",
+    "statements": [
+      {
+        "source": "Proposition 29.2, negated decomposability with empty interior",
+        "lean": "IndecomposableContinuum.indecomposable_iff_empty_interior",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Proposition 29.2, closed-subcontinuum nowhere-density formulation",
+        "lean": "IndecomposableContinuum.indecomposable_iff_nowhere_dense",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Exercise 29(6), no disconnecting proper subcontinuum",
+        "lean": "IndecomposableContinuum.connected_compl_of_proper_subcontinuum",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Exercise 29(6), no cut points including singleton preconnected complements",
+        "lean": "IndecomposableContinuum.preconnected_compl_singleton",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Exercise 29(6), no cut points in a nontrivial continuum",
+        "lean": "IndecomposableContinuum.connected_compl_singleton",
+        "module": "Solution",
+        "status": "proved"
+      }
+    ]
+  },
+  "acknowledgements": "Credits Paul Bankston and the Lean and Mathlib contributors. The gluing argument generalizes the same authors' earlier non-cut-points proof pattern. No mathematical novelty, first formalization, author endorsement, registry acceptance, or completed human expert review is claimed."
+}
